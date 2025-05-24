@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { SunIconProps, WaterIconProps, SoilIconProps, FertilizerIconProps, InfoIconProps, LeafIconProps, SparklesIconProps, GlobeAltIconProps, TrendingUpIconProps, CalendarIconProps, CameraIconProps, UploadIconProps, XCircleIconProps } from '../types';
+import { SunIconProps, WaterIconProps, SoilIconProps, FertilizerIconProps, InfoIconProps, LeafIconProps, SparklesIconProps, GlobeAltIconProps, TrendingUpIconProps, CalendarIconProps, CameraIconProps, UploadIconProps, XCircleIconProps, ArrowLeftIconProps } from '../types';
 
 
 export const SunIcon: React.FC<SunIconProps> = ({ className = "w-6 h-6" }) => (
@@ -81,5 +80,11 @@ export const UploadIcon: React.FC<UploadIconProps> = ({ className = "w-6 h-6" })
 export const XCircleIcon: React.FC<XCircleIconProps> = ({ className = "w-6 h-6" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
     <path strokeLinecap="round" strokeLinejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+  </svg>
+);
+
+export const ArrowLeftIcon: React.FC<ArrowLeftIconProps> = ({ className = "w-6 h-6" }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
   </svg>
 );

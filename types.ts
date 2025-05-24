@@ -73,6 +73,9 @@ export interface UploadIconProps {
 export interface XCircleIconProps {
   className?: string;
 }
+export interface ArrowLeftIconProps {
+  className?: string;
+}
 
 export interface UserImageDisplayProps {
   imageUrl: string;
