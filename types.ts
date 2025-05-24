@@ -1,4 +1,3 @@
-
 export interface CareInstructions {
   sunlight: string;
   water: string;
@@ -80,4 +79,41 @@ export interface UserImageDisplayProps {
   isIdentifying: boolean;
   identificationError: string | null;
   onClearImage: () => void;
+}
+
+export interface PlantHealthIssue {
+  issue: string;
+  likelihood: 'High' | 'Medium' | 'Low';
+  description: string;
+}
+
+export interface TreatmentRecommendation {
+  action: string;
+  priority: 'Immediate' | 'Soon' | 'Monitor';
+  description: string;
+}
+
+export interface PreventiveCare {
+  watering: string;
+  lighting: string;
+  environment: string;
+}
+
+export interface PlantHealthDetails {
+  plantName: string;
+  overallHealth: 'Healthy' | 'Fair' | 'Poor' | 'Critical';
+  healthScore: number;
+  visibleSymptoms: string[];
+  possibleIssues: PlantHealthIssue[];
+  treatmentRecommendations: TreatmentRecommendation[];
+  preventiveCare: PreventiveCare;
+  urgency: 'Emergency' | 'Attention Needed' | 'Routine Care' | 'Looks Good';
+  additionalNotes?: string;
+  cannotAssess?: boolean;
+  reason?: string;
+}
+
+export interface PlantHealthData {
+  healthDetails: PlantHealthDetails | null;
+  imageUrl: string | null;
 }
