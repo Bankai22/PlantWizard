@@ -25,3 +25,11 @@ dist-ssr
 
 # Local Netlify folder
 .netlify
+
+# macOS system files
+**/.DS_Store
+
+# Mobile development (not needed for web app)
+android/
+ios/
+capacitor.config.ts
