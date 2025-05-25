@@ -304,7 +304,7 @@ const App: React.FC = () => {
 
       <main className="w-full max-w-4xl">
         <SearchBar onSearch={handleSearch} isLoading={anyLoading} />
-        
+
         {/* Hidden file inputs */}
         <input 
           type="file" 
