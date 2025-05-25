@@ -1,0 +1,8 @@
+{
+  "name": "Plant Explorer",
+  "description": "An interactive web application that uses AI to provide comprehensive information and generate images for a wide variety of plants.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
