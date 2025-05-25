@@ -4,6 +4,4 @@
     <string name="title_activity_main">PlantWizard</string>
     <string name="package_name">com.plantwizard.app</string>
     <string name="custom_url_scheme">com.plantwizard.app</string>
-    <string name="app_description">AI-powered plant identification and care guide. Identify plants from photos and get detailed care instructions.</string>
-    <string name="app_short_description">AI Plant Identification &amp; Care Guide</string>
 </resources>
