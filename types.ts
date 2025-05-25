@@ -73,9 +73,6 @@ export interface UploadIconProps {
 export interface XCircleIconProps {
   className?: string;
 }
-export interface ArrowLeftIconProps {
-  className?: string;
-}
 
 export interface UserImageDisplayProps {
   imageUrl: string;
@@ -119,4 +116,20 @@ export interface PlantHealthDetails {
 export interface PlantHealthData {
   healthDetails: PlantHealthDetails | null;
   imageUrl: string | null;
+}
+
+export interface SearchHistoryItem {
+  id: string;
+  plantName: string;
+  searchType: 'text' | 'image';
+  timestamp: number;
+  imageUrl?: string;
+  thumbnail?: string;
+}
+
+export interface SearchHistoryProps {
+  history: SearchHistoryItem[];
+  onSelectItem: (item: SearchHistoryItem) => void;
+  onClearHistory: () => void;
+  onDeleteItem: (id: string) => void;
 }

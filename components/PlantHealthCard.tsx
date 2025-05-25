@@ -60,10 +60,6 @@ const PlantHealthCard: React.FC<PlantHealthCardProps> = ({ healthData }) => {
     }
   };
 
-  const resizeImage = (file, maxWidth = 800) => {
-    // Resize to reduce data transfer
-  };
-
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 max-w-4xl mx-auto mt-8">
       {/* Header Section */}
